@@ -10,7 +10,7 @@ config_directory=  # /etc/libvirt/qemu/
 
 if [ ! $? == 0 ]
 then
-    virsh destroy $1
+  virsh destroy $1
 fi
 
 rm -rf "$image_directory$1.img"
